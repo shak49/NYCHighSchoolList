@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qLm-5V-HXm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selected List-->
+        <scene sceneID="2BT-Ox-Z8A">
+            <objects>
+                <tableViewController id="eRq-z8-1GM" customClass="SelectionTableViewController" customModule="NYCHighSchoolList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4oQ-8Z-IHX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectionCell" textLabel="3va-WP-YB0" style="IBUITableViewCellStyleDefault" id="MJ7-yF-Il4">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJ7-yF-Il4" id="4DB-k2-oi5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3va-WP-YB0">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eRq-z8-1GM" id="hm8-Rk-FAm"/>
+                            <outlet property="delegate" destination="eRq-z8-1GM" id="EyR-Nk-8Xz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selected List" id="0P5-b8-SPE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRk-nr-17e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="777"/>
+        </scene>
+        <!--High School List-->
+        <scene sceneID="ZjF-bH-K2k">
+            <objects>
+                <tableViewController id="kd1-sD-X0n" customClass="HighSchoolTableViewController" customModule="NYCHighSchoolList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Ea-QK-qt9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighSchoolCell" textLabel="Vxd-5f-QhA" style="IBUITableViewCellStyleDefault" id="qoM-LE-X4B">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qoM-LE-X4B" id="OC3-nH-dHo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vxd-5f-QhA">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="TVtoVC" id="J4R-y4-mtG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kd1-sD-X0n" id="3zL-hn-YyD"/>
+                            <outlet property="delegate" destination="kd1-sD-X0n" id="G0G-XF-JcO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="High School List" id="JFW-7L-kIe">
+                        <barButtonItem key="rightBarButtonItem" title="Selection List" id="CYt-qJ-puB">
+                            <connections>
+                                <segue destination="eRq-z8-1GM" kind="show" id="ibK-en-VzI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJA-c7-tbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513.04347826086962" y="101.78571428571428"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DetailViewController" customModule="NYCHighSchoolList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="sjl-we-IjT">
+                                <rect key="frame" x="31" y="172" width="352" height="582.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qga-ki-9tD">
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pg8-Oh-ZsJ">
+                                        <rect key="frame" x="0.0" y="104" width="352" height="478.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u0r-uc-TRY">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="478.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlF-Xg-Qwn" customClass="CustomButton" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="231.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gKo-xU-Dna">
+                                                                <rect key="frame" x="16" y="16" width="136.5" height="199.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPl-uM-W8m">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="139"/>
+                                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do8-cs-uuQ" customClass="CustomLabel" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="146" width="136.5" height="53.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="gKo-xU-Dna" firstAttribute="top" secondItem="UlF-Xg-Qwn" secondAttribute="top" constant="16" id="FeD-bf-gOC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gKo-xU-Dna" secondAttribute="trailing" constant="16" id="lhT-HO-8Rb"/>
+                                                            <constraint firstItem="gKo-xU-Dna" firstAttribute="leading" secondItem="UlF-Xg-Qwn" secondAttribute="leading" constant="16" id="puh-4S-6vZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gKo-xU-Dna" secondAttribute="bottom" constant="16" id="uM2-Mq-dNu"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-nj-Y1Z" customClass="CustomButton" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="246.5" width="168.5" height="232"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="myf-XK-GJ2">
+                                                                <rect key="frame" x="16" y="16" width="136.5" height="200"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-Uz-e1k">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="139"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr2-XU-uVF" customClass="CustomLabel" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="146" width="136.5" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="myf-XK-GJ2" firstAttribute="leading" secondItem="pSE-nj-Y1Z" secondAttribute="leading" constant="16" id="0hU-em-t5a"/>
+                                                            <constraint firstAttribute="bottom" secondItem="myf-XK-GJ2" secondAttribute="bottom" constant="16" id="Hw8-gL-osf"/>
+                                                            <constraint firstAttribute="trailing" secondItem="myf-XK-GJ2" secondAttribute="trailing" constant="16" id="kcp-yv-5SG"/>
+                                                            <constraint firstItem="myf-XK-GJ2" firstAttribute="top" secondItem="pSE-nj-Y1Z" secondAttribute="top" constant="16" id="pcs-dL-oQi"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kx5-rj-gtT">
+                                                <rect key="frame" x="183.5" y="0.0" width="168.5" height="478.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgq-hS-2fm" customClass="CustomButton" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="231.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-E3-Lea">
+                                                                <rect key="frame" x="16" y="16" width="136.5" height="199.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwM-AK-k6X">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="139"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7F-AB-dEq" customClass="CustomLabel" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="146" width="136.5" height="53.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="Dj1-E3-Lea" secondAttribute="bottom" constant="16" id="BBC-eM-TQ0"/>
+                                                            <constraint firstItem="Dj1-E3-Lea" firstAttribute="leading" secondItem="Vgq-hS-2fm" secondAttribute="leading" constant="16" id="Cf3-FG-Un6"/>
+                                                            <constraint firstItem="Dj1-E3-Lea" firstAttribute="top" secondItem="Vgq-hS-2fm" secondAttribute="top" constant="16" id="DJl-pa-KCK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Dj1-E3-Lea" secondAttribute="trailing" constant="16" id="vo1-0U-nuk"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfJ-ze-G5v" customClass="CustomButton" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="246.5" width="168.5" height="232"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-ke-vbA">
+                                                                <rect key="frame" x="16" y="16" width="136.5" height="200"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAl-rg-4OC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="139"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writing Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-cZ-850" customClass="CustomLabel" customModule="NYCHighSchoolList" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="146" width="136.5" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="GQq-ke-vbA" secondAttribute="bottom" constant="16" id="3bj-pk-uuH"/>
+                                                            <constraint firstItem="GQq-ke-vbA" firstAttribute="top" secondItem="xfJ-ze-G5v" secondAttribute="top" constant="16" id="5AV-bx-UXL"/>
+                                                            <constraint firstItem="GQq-ke-vbA" firstAttribute="leading" secondItem="xfJ-ze-G5v" secondAttribute="leading" constant="16" id="k5B-AZ-A9y"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GQq-ke-vbA" secondAttribute="trailing" constant="16" id="kmv-hK-KvG"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pLi-cZ-850" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="53V-ZL-bfm"/>
+                            <constraint firstItem="sjl-we-IjT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ACf-bL-yhc"/>
+                            <constraint firstItem="Qga-ki-9tD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Bcm-Hn-BN8"/>
+                            <constraint firstItem="Do8-cs-uuQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="D0m-t4-ZmI"/>
+                            <constraint firstItem="p7F-AB-dEq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Exz-k9-kwV"/>
+                            <constraint firstItem="sjl-we-IjT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="USG-dk-JM8"/>
+                            <constraint firstItem="sjl-we-IjT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="aB6-mc-aWt"/>
+                            <constraint firstItem="Hr2-XU-uVF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="rje-yK-vVi"/>
+                            <constraint firstItem="sjl-we-IjT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wsf-i4-vya"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fJf-7b-mIq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="H09-wO-9mn">
+                            <connections>
+                                <action selector="addButton:" destination="BYZ-38-t0r" id="bkh-VD-o1M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="SATRateLabel" destination="yPl-uM-W8m" id="5aQ-ai-jPV"/>
+                        <outlet property="highSchoolLabel" destination="Qga-ki-9tD" id="Bgf-Nh-w6m"/>
+                        <outlet property="mathLabel" destination="p7F-AB-dEq" id="TUM-P6-lZM"/>
+                        <outlet property="mathScoreLabel" destination="pwM-AK-k6X" id="wKP-nB-age"/>
+                        <outlet property="readingLabel" destination="Hr2-XU-uVF" id="664-Gb-M2i"/>
+                        <outlet property="readingScoreLabel" destination="hqD-Uz-e1k" id="PzG-bX-CQt"/>
+                        <outlet property="studentLabel" destination="Do8-cs-uuQ" id="t3q-9Q-6c5"/>
+                        <outlet property="viewForMathScore" destination="Vgq-hS-2fm" id="qpc-EC-Ub9"/>
+                        <outlet property="viewForReadingScore" destination="pSE-nj-Y1Z" id="NBJ-D9-vQB"/>
+                        <outlet property="viewForStudents" destination="UlF-Xg-Qwn" id="wCt-R1-eyh"/>
+                        <outlet property="viewForWritingScore" destination="xfJ-ze-G5v" id="QQB-k6-dal"/>
+                        <outlet property="writingLabel" destination="pLi-cZ-850" id="fwI-Pw-kt9"/>
+                        <outlet property="writingScoreLabel" destination="FAl-rg-4OC" id="mG0-9m-P8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228.985507246377" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iSL-pV-5J5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qLm-5V-HXm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="vUd-wz-CZS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kd1-sD-X0n" kind="relationship" relationship="rootViewController" id="fFm-dX-IEb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4d-P7-bN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
