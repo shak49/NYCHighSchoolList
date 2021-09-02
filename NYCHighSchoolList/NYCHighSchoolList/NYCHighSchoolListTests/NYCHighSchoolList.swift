@@ -60,18 +60,6 @@ class NYCHighSchoolListTests: XCTestCase {
     }
     
     // CoreData
-    /*
-    func testCoreData() {
-        let selectionC = SelectionController.sharedInstance
-        var selections: Selection?
-        // creat
-        
-        // read
-        XCTAssert(selectionC.readRequest() != nil)
-        // update
-        
-        // delete
-    }
-     */
+    
 }
 
