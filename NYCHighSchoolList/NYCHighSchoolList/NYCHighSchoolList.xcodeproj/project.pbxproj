@@ -12,7 +12,7 @@
 		6D24A49D26C1FBCA00504F22 /* Selection + Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A49C26C1FBCA00504F22 /* Selection + Convenience.swift */; };
 		6D24A49F26C2CCE600504F22 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A49E26C2CCE600504F22 /* SelectionController.swift */; };
 		6D24A4A126C2D1D400504F22 /* SelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4A026C2D1D400504F22 /* SelectionTableViewController.swift */; };
-		6D24A4A926C2D72E00504F22 /* NYCHighSchoolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4A826C2D72E00504F22 /* NYCHighSchoolList.swift */; };
+		6D24A4A926C2D72E00504F22 /* NYCHighSchoolListSlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4A826C2D72E00504F22 /* NYCHighSchoolListSlowTest.swift */; };
 		6D24A4DC26C5D6B100504F22 /* File Manager(Recycle).swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4DB26C5D6B100504F22 /* File Manager(Recycle).swift */; };
 		6D24A4E026C76F7000504F22 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4DF26C76F7000504F22 /* Utility.swift */; };
 		6D24A4E226CCB3AB00504F22 /* CustomUIStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4E126CCB3AB00504F22 /* CustomUIStyle.swift */; };
@@ -50,7 +50,7 @@
 		6D24A49E26C2CCE600504F22 /* SelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
 		6D24A4A026C2D1D400504F22 /* SelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewController.swift; sourceTree = "<group>"; };
 		6D24A4A626C2D72E00504F22 /* NYCHighSchoolListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCHighSchoolListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D24A4A826C2D72E00504F22 /* NYCHighSchoolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolList.swift; sourceTree = "<group>"; };
+		6D24A4A826C2D72E00504F22 /* NYCHighSchoolListSlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCHighSchoolListSlowTest.swift; sourceTree = "<group>"; };
 		6D24A4AA26C2D72E00504F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D24A4DB26C5D6B100504F22 /* File Manager(Recycle).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Manager(Recycle).swift"; sourceTree = "<group>"; };
 		6D24A4DF26C76F7000504F22 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		6D24A4A726C2D72E00504F22 /* NYCHighSchoolListTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D24A4A826C2D72E00504F22 /* NYCHighSchoolList.swift */,
+				6D24A4A826C2D72E00504F22 /* NYCHighSchoolListSlowTest.swift */,
 				6D24A4AA26C2D72E00504F22 /* Info.plist */,
 			);
 			path = NYCHighSchoolListTests;
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D24A4A926C2D72E00504F22 /* NYCHighSchoolList.swift in Sources */,
+				6D24A4A926C2D72E00504F22 /* NYCHighSchoolListSlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

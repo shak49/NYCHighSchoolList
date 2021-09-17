@@ -9,7 +9,7 @@ import XCTest
 import CoreData
 @testable import NYCHighSchoolList
 
-class NYCHighSchoolListTests: XCTestCase {
+class NYCHighSchoolListSlowTest: XCTestCase {
     // Shak notes: Properties
     var session: URLSession?
     let networkMonitor = NetworkMonitor.shared
