@@ -20,6 +20,7 @@
 		6D24A4E726CD6F1300504F22 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4E626CD6F1300504F22 /* CustomLabel.swift */; };
 		6D24A4E926CD74B000504F22 /* HighSchoolVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D24A4E826CD74B000504F22 /* HighSchoolVM.swift */; };
 		6D37200626F42C34000B2061 /* URLSessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37200526F42C34000B2061 /* URLSessionStub.swift */; };
+		6D37200A26F432D6000B2061 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37200926F432D6000B2061 /* NetworkMonitor.swift */; };
 		6DA2DDEC26C1B62A0023400D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2DDEB26C1B62A0023400D /* AppDelegate.swift */; };
 		6DA2DDEE26C1B62A0023400D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2DDED26C1B62A0023400D /* SceneDelegate.swift */; };
 		6DA2DDF026C1B62A0023400D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2DDEF26C1B62A0023400D /* DetailViewController.swift */; };
@@ -58,6 +59,7 @@
 		6D24A4E626CD6F1300504F22 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		6D24A4E826CD74B000504F22 /* HighSchoolVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolVM.swift; sourceTree = "<group>"; };
 		6D37200526F42C34000B2061 /* URLSessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionStub.swift; sourceTree = "<group>"; };
+		6D37200926F432D6000B2061 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		6DA2DDE826C1B62A0023400D /* NYCHighSchoolList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCHighSchoolList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA2DDEB26C1B62A0023400D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DA2DDED26C1B62A0023400D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				6D24A4DB26C5D6B100504F22 /* File Manager(Recycle).swift */,
 				6D24A4DF26C76F7000504F22 /* Utility.swift */,
 				6D37200526F42C34000B2061 /* URLSessionStub.swift */,
+				6D37200926F432D6000B2061 /* NetworkMonitor.swift */,
 			);
 			path = "Helper & Extension";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				6DA2DE0D26C1E9F10023400D /* HighSchoolTableViewController.swift in Sources */,
 				6DA2DDEE26C1B62A0023400D /* SceneDelegate.swift in Sources */,
 				6D24A49D26C1FBCA00504F22 /* Selection + Convenience.swift in Sources */,
+				6D37200A26F432D6000B2061 /* NetworkMonitor.swift in Sources */,
 				6DA2DE0626C1B8B40023400D /* HighSchool.swift in Sources */,
 				6D24A49926C1FA3600504F22 /* Selection.xcdatamodeld in Sources */,
 			);

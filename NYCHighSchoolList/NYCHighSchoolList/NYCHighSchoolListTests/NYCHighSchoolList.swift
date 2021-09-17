@@ -12,6 +12,7 @@ import CoreData
 class NYCHighSchoolListTests: XCTestCase {
     // Shak notes: Properties
     var session: URLSession?
+    let networkMonitor = NetworkMonitor.shared
     
     // Before each test gets called this function check if there is an error then it throws it.
     override func setUpWithError() throws {
@@ -25,7 +26,10 @@ class NYCHighSchoolListTests: XCTestCase {
         session = nil
     }
     
-    func testValidApiCallGetsHTTPStatusCode200() throws {
+    func testValidURL() throws {
+        try XCTSkipUnless(
+          networkMonitor.isReachable,
+          "Network connectivity needed for this test.")
         let url = URL(string: "https://data.cityofnewyork.us/resource/s3k6-pzi2.json")
         let expectation = expectation(description: "Status Code: 200")
         session?.dataTask(with: url!, completionHandler: { _, response, error in
