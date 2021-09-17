@@ -25,41 +25,37 @@ class NYCHighSchoolListTests: XCTestCase {
         session = nil
     }
     
-    // API call
     func testValidApiCallGetsHTTPStatusCode200() throws {
-        let url = URL(string: "https://data.cityofnewyork.us/resource/f9bf-2cp4.json")!
+        let url = URL(string: "https://data.cityofnewyork.us/resource/s3k6-pzi2.json")
         let expectation = expectation(description: "Status Code: 200")
-        session?.dataTask(with: url, completionHandler: { _, response, error in
+        session?.dataTask(with: url!, completionHandler: { _, response, error in
             if let error = error {
                 XCTFail("Error: \(error.localizedDescription)")
                 return
             } else if let statusCode = (response as? HTTPURLResponse)?.statusCode {
                 if statusCode == 200 {
-                    // Fullfill() -> it represents that expectation has met
                     expectation.fulfill()
                 } else {
                     XCTFail("Status Code: \(statusCode)")
                 }
             }
         }).resume()
-        // Keeps test running until all expectations are fullfilled
         wait(for: [expectation], timeout: 5)
     }
     
-    // Nil value
-    func testObjectForNilValue() {
-        let schoolController = HighSchoolController()
-        XCTAssert(schoolController.highSchool?.school_name == nil)
-        XCTAssert(schoolController.highSchool?.num_of_sat_test_takers == nil)
+    func testAPICallCompleted() throws {
+        let url = URL(string: "https://data.cityofnewyork.us/resource/s3k6-pzi2.json")
+        let expectation = expectation(description: "Status Code: 200")
+        var statusCode: Int?
+        var responseError: Error?
+        session?.dataTask(with: url!, completionHandler: { _, response, error in
+            statusCode = (response as? HTTPURLResponse)?.statusCode
+            responseError = error
+        }).resume()
+        wait(for: [expectation], timeout: 5)
+        XCTAssertNil(responseError)
+        XCTAssertEqual(statusCode, 200)
     }
-    
-    // Upercase
-    func testLabelsForUpercaseValue(value: HighSchool) {
-        let schoolDVC = DetailViewController()
-        XCTAssertFalse(schoolDVC.highSchoolLabel.text == schoolDVC.highSchool?.school_name?.uppercased())
-    }
-    
-    // CoreData
     
 }
 
