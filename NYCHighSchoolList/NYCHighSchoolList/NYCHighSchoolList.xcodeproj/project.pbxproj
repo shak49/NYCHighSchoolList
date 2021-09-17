@@ -377,7 +377,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T94248RU7;
-				INFOPLIST_FILE = HighSchoolList_DemoTests/Info.plist;
+				INFOPLIST_FILE = NYCHighSchoolListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +397,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T94248RU7;
-				INFOPLIST_FILE = HighSchoolList_DemoTests/Info.plist;
+				INFOPLIST_FILE = NYCHighSchoolListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
